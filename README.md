@@ -10,7 +10,7 @@ Before you can utilize Eco Scheduler, you must ensure your Kubernetes environmen
 
 - `start_minikube.sh`: Starts a Minikube cluster.
 - `stop_minikube.sh`: Stops the Minikube cluster.
-- `install_package.sh`: Installs required packages.
+- `install_package.sh`: Installs required packages (Prometheus + Grafana + kepler)
 - `destroy_minikube.sh`: Completely removes the Minikube cluster.
 
 Make sure to execute these scripts in your terminal according to your setup needs.
