@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project, developed as a final year project at ENSEEIHT, introduces an eco-friendly scheduler for Kubernetes named Eco Scheduler. The goal of Eco Scheduler is to enhance Kubernetes' scheduling process by prioritizing energy efficiency without compromising performance. This is achieved through monitoring and analyzing energy consumption data of Kubernetes pods, specifically those prefixed with "kepler-", and making informed scheduling decisions to minimize the overall energy footprint.
+This project, developed as a final year project at ENSEEIHT, introduces an eco-friendly scheduler for Kubernetes named Eco Scheduler. The goal of Eco Scheduler is to enhance Kubernetes' scheduling process by prioritizing energy efficiency without compromising performance. This is achieved through monitoring and analyzing energy consumption data of Kubernetes pods, and making informed scheduling decisions to minimize the overall energy footprint.
 
 ## Installation
 
