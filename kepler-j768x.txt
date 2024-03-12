@@ -1,0 +1,444 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 2.3315e-05
+go_gc_duration_seconds{quantile="0.25"} 3.8324e-05
+go_gc_duration_seconds{quantile="0.5"} 4.3262e-05
+go_gc_duration_seconds{quantile="0.75"} 6.0111e-05
+go_gc_duration_seconds{quantile="1"} 0.000200094
+go_gc_duration_seconds_sum 0.075376447
+go_gc_duration_seconds_count 1581
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 18
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.20.10"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 4.90228e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 5.146818408e+09
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.566891e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 2.804074e+07
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 8.753552e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 4.90228e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 1.2517376e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 7.569408e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 24906
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 1.1296768e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 2.0086784e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.7102788519884477e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 2.8065646e+07
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 9600
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 15600
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 197120
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 261120
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 6.75532e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 1.589725e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 884736
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 884736
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 3.3158408e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 14
+# HELP kepler_container_bpf_block_irq_total Aggregated block irq value obtained from BPF
+# TYPE kepler_container_bpf_block_irq_total counter
+kepler_container_bpf_block_irq_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 0
+kepler_container_bpf_block_irq_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 0
+kepler_container_bpf_block_irq_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 0
+kepler_container_bpf_block_irq_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 0
+kepler_container_bpf_block_irq_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 0
+kepler_container_bpf_block_irq_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 0
+kepler_container_bpf_block_irq_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 0
+kepler_container_bpf_block_irq_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 0
+kepler_container_bpf_block_irq_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 0
+kepler_container_bpf_block_irq_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 0
+kepler_container_bpf_block_irq_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 0
+kepler_container_bpf_block_irq_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 0
+kepler_container_bpf_block_irq_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 13
+# HELP kepler_container_bpf_cpu_time_us_total Aggregated CPU time obtained from BPF
+# TYPE kepler_container_bpf_cpu_time_us_total counter
+kepler_container_bpf_cpu_time_us_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 2357
+kepler_container_bpf_cpu_time_us_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 55048
+kepler_container_bpf_cpu_time_us_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 2715
+kepler_container_bpf_cpu_time_us_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 2128
+kepler_container_bpf_cpu_time_us_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 2085
+kepler_container_bpf_cpu_time_us_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 455
+kepler_container_bpf_cpu_time_us_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 17
+kepler_container_bpf_cpu_time_us_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1
+kepler_container_bpf_cpu_time_us_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 204
+kepler_container_bpf_cpu_time_us_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 33
+kepler_container_bpf_cpu_time_us_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 473
+kepler_container_bpf_cpu_time_us_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 3563
+kepler_container_bpf_cpu_time_us_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1.2254074e+07
+# HELP kepler_container_bpf_net_rx_irq_total Aggregated network rx irq value obtained from BPF
+# TYPE kepler_container_bpf_net_rx_irq_total counter
+kepler_container_bpf_net_rx_irq_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 320
+kepler_container_bpf_net_rx_irq_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 12334
+kepler_container_bpf_net_rx_irq_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 3519
+kepler_container_bpf_net_rx_irq_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 227
+kepler_container_bpf_net_rx_irq_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 299
+kepler_container_bpf_net_rx_irq_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 70
+kepler_container_bpf_net_rx_irq_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1
+kepler_container_bpf_net_rx_irq_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 0
+kepler_container_bpf_net_rx_irq_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 25
+kepler_container_bpf_net_rx_irq_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 311
+kepler_container_bpf_net_rx_irq_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 39
+kepler_container_bpf_net_rx_irq_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 2562
+kepler_container_bpf_net_rx_irq_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 3.532927e+06
+# HELP kepler_container_bpf_net_tx_irq_total Aggregated network tx irq value obtained from BPF
+# TYPE kepler_container_bpf_net_tx_irq_total counter
+kepler_container_bpf_net_tx_irq_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 194
+kepler_container_bpf_net_tx_irq_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 4528
+kepler_container_bpf_net_tx_irq_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 1577
+kepler_container_bpf_net_tx_irq_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 147
+kepler_container_bpf_net_tx_irq_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 91
+kepler_container_bpf_net_tx_irq_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 158
+kepler_container_bpf_net_tx_irq_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 0
+kepler_container_bpf_net_tx_irq_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 0
+kepler_container_bpf_net_tx_irq_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 6
+kepler_container_bpf_net_tx_irq_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 103
+kepler_container_bpf_net_tx_irq_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 22
+kepler_container_bpf_net_tx_irq_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 1196
+kepler_container_bpf_net_tx_irq_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 2.131856e+06
+# HELP kepler_container_bpf_page_cache_hit_total Aggregated Page Cache Hit obtained from BPF
+# TYPE kepler_container_bpf_page_cache_hit_total counter
+kepler_container_bpf_page_cache_hit_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1
+kepler_container_bpf_page_cache_hit_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1
+kepler_container_bpf_page_cache_hit_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 0
+kepler_container_bpf_page_cache_hit_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 126822
+# HELP kepler_container_cache_miss_total Aggregated cache miss value
+# TYPE kepler_container_cache_miss_total counter
+kepler_container_cache_miss_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 4.36818357e+08
+kepler_container_cache_miss_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 9.407538564e+09
+kepler_container_cache_miss_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 3.801196474e+09
+kepler_container_cache_miss_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 3.8105929e+07
+kepler_container_cache_miss_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 1.43216735e+08
+kepler_container_cache_miss_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 3.4917309e+08
+kepler_container_cache_miss_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 88127
+kepler_container_cache_miss_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 139494
+kepler_container_cache_miss_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 2.4038027e+07
+kepler_container_cache_miss_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 2.99510546e+08
+kepler_container_cache_miss_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 4.2652744e+07
+kepler_container_cache_miss_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 2.501635622e+09
+kepler_container_cache_miss_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1.44238497399e+11
+# HELP kepler_container_core_joules_total Aggregated RAPL value in core in joules
+# TYPE kepler_container_core_joules_total counter
+kepler_container_core_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="dynamic",pod_name="kube-scheduler-minikube"} 74.586
+kepler_container_core_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="idle",pod_name="kube-scheduler-minikube"} 11694.714
+kepler_container_core_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="dynamic",pod_name="kube-apiserver-minikube"} 1279.668
+kepler_container_core_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="idle",pod_name="kube-apiserver-minikube"} 11694.714
+kepler_container_core_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="dynamic",pod_name="etcd-minikube"} 255.327
+kepler_container_core_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="idle",pod_name="etcd-minikube"} 11694.714
+kepler_container_core_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="dynamic",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 19.587
+kepler_container_core_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="idle",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 11694.714
+kepler_container_core_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="dynamic",pod_name="kepler-j768x"} 65.304
+kepler_container_core_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="idle",pod_name="kepler-j768x"} 11694.714
+kepler_container_core_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="dynamic",pod_name="coredns-5dd5756b68-ph4r2"} 31.518
+kepler_container_core_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="idle",pod_name="coredns-5dd5756b68-ph4r2"} 11694.714
+kepler_container_core_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.06
+kepler_container_core_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 36.426
+kepler_container_core_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.03
+kepler_container_core_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 1.806
+kepler_container_core_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="dynamic",pod_name="kube-proxy-t2h77"} 10.632
+kepler_container_core_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="idle",pod_name="kube-proxy-t2h77"} 11694.714
+kepler_container_core_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="dynamic",pod_name="storage-provisioner"} 29.715
+kepler_container_core_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="idle",pod_name="storage-provisioner"} 11694.714
+kepler_container_core_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="dynamic",pod_name="kindnet-5jshm"} 11.739
+kepler_container_core_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="idle",pod_name="kindnet-5jshm"} 11694.714
+kepler_container_core_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="dynamic",pod_name="kube-controller-manager-minikube"} 218.643
+kepler_container_core_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="idle",pod_name="kube-controller-manager-minikube"} 11694.714
+kepler_container_core_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 45602.823
+kepler_container_core_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 11694.714
+# HELP kepler_container_cpu_cycles_total Aggregated CPU cycle value
+# TYPE kepler_container_cpu_cycles_total counter
+kepler_container_cpu_cycles_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 2.8269250905e+10
+kepler_container_cpu_cycles_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 6.33679213054e+11
+kepler_container_cpu_cycles_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 2.07713391211e+11
+kepler_container_cpu_cycles_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 6.150946865e+09
+kepler_container_cpu_cycles_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 1.5428577052e+10
+kepler_container_cpu_cycles_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 1.8302444077e+10
+kepler_container_cpu_cycles_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 8.6567946e+07
+kepler_container_cpu_cycles_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 8.336223e+06
+kepler_container_cpu_cycles_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 1.771307114e+09
+kepler_container_cpu_cycles_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 1.5614858242e+10
+kepler_container_cpu_cycles_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 3.457757073e+09
+kepler_container_cpu_cycles_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 1.71990290763e+11
+kepler_container_cpu_cycles_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1.881293007446e+13
+# HELP kepler_container_cpu_instructions_total Aggregated CPU instruction value
+# TYPE kepler_container_cpu_instructions_total counter
+kepler_container_cpu_instructions_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",pod_name="kube-scheduler-minikube"} 2.1623087984e+10
+kepler_container_cpu_instructions_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",pod_name="kube-apiserver-minikube"} 4.15692142326e+11
+kepler_container_cpu_instructions_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",pod_name="etcd-minikube"} 8.0597674772e+10
+kepler_container_cpu_instructions_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 5.575236703e+09
+kepler_container_cpu_instructions_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",pod_name="kepler-j768x"} 1.3947622119e+10
+kepler_container_cpu_instructions_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",pod_name="coredns-5dd5756b68-ph4r2"} 6.970848289e+09
+kepler_container_cpu_instructions_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1.5381618e+07
+kepler_container_cpu_instructions_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1.3005923e+07
+kepler_container_cpu_instructions_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",pod_name="kube-proxy-t2h77"} 9.52092767e+08
+kepler_container_cpu_instructions_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",pod_name="storage-provisioner"} 6.374995732e+09
+kepler_container_cpu_instructions_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",pod_name="kindnet-5jshm"} 2.345059894e+09
+kepler_container_cpu_instructions_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",pod_name="kube-controller-manager-minikube"} 7.0457360849e+10
+kepler_container_cpu_instructions_total{container_id="system_processes",container_name="system_processes",container_namespace="system",pod_name="system_processes"} 1.3109365516054e+13
+# HELP kepler_container_dram_joules_total Aggregated RAPL value in dram in joules
+# TYPE kepler_container_dram_joules_total counter
+kepler_container_dram_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="dynamic",pod_name="kube-scheduler-minikube"} 74.037
+kepler_container_dram_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="idle",pod_name="kube-scheduler-minikube"} 1026.438
+kepler_container_dram_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="dynamic",pod_name="kube-apiserver-minikube"} 127.536
+kepler_container_dram_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="idle",pod_name="kube-apiserver-minikube"} 1026.438
+kepler_container_dram_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="dynamic",pod_name="etcd-minikube"} 94.767
+kepler_container_dram_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="idle",pod_name="etcd-minikube"} 1026.438
+kepler_container_dram_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="dynamic",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 67.782
+kepler_container_dram_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="idle",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 1026.438
+kepler_container_dram_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="dynamic",pod_name="kepler-j768x"} 73.716
+kepler_container_dram_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="idle",pod_name="kepler-j768x"} 1026.438
+kepler_container_dram_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="dynamic",pod_name="coredns-5dd5756b68-ph4r2"} 73.947
+kepler_container_dram_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="idle",pod_name="coredns-5dd5756b68-ph4r2"} 1026.438
+kepler_container_dram_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.006
+kepler_container_dram_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 3.15
+kepler_container_dram_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.003
+kepler_container_dram_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 0.156
+kepler_container_dram_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="dynamic",pod_name="kube-proxy-t2h77"} 70.227
+kepler_container_dram_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="idle",pod_name="kube-proxy-t2h77"} 1026.438
+kepler_container_dram_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="dynamic",pod_name="storage-provisioner"} 73.935
+kepler_container_dram_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="idle",pod_name="storage-provisioner"} 1026.438
+kepler_container_dram_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="dynamic",pod_name="kindnet-5jshm"} 68.244
+kepler_container_dram_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="idle",pod_name="kindnet-5jshm"} 1026.438
+kepler_container_dram_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="dynamic",pod_name="kube-controller-manager-minikube"} 86.283
+kepler_container_dram_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="idle",pod_name="kube-controller-manager-minikube"} 1026.438
+kepler_container_dram_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 1547.871
+kepler_container_dram_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 1026.438
+# HELP kepler_container_joules_total Aggregated RAPL Package + Uncore + DRAM + GPU + other host components (platform - package - dram) in joules
+# TYPE kepler_container_joules_total counter
+kepler_container_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="dynamic",pod_name="kube-scheduler-minikube"} 242.781
+kepler_container_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="idle",pod_name="kube-scheduler-minikube"} 15053.514
+kepler_container_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="dynamic",pod_name="kube-apiserver-minikube"} 1496.334
+kepler_container_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="idle",pod_name="kube-apiserver-minikube"} 15053.514
+kepler_container_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="dynamic",pod_name="etcd-minikube"} 443.433
+kepler_container_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="idle",pod_name="etcd-minikube"} 15053.514
+kepler_container_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="dynamic",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 181.37699999999998
+kepler_container_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="idle",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 15053.514
+kepler_container_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="dynamic",pod_name="kepler-j768x"} 236.985
+kepler_container_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="idle",pod_name="kepler-j768x"} 15053.514
+kepler_container_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="dynamic",pod_name="coredns-5dd5756b68-ph4r2"} 200.889
+kepler_container_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="idle",pod_name="coredns-5dd5756b68-ph4r2"} 15053.514
+kepler_container_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.8520000000000001
+kepler_container_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 46.83
+kepler_container_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.048
+kepler_container_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 2.322
+kepler_container_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="dynamic",pod_name="kube-proxy-t2h77"} 175.362
+kepler_container_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="idle",pod_name="kube-proxy-t2h77"} 15053.514
+kepler_container_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="dynamic",pod_name="storage-provisioner"} 198.702
+kepler_container_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="idle",pod_name="storage-provisioner"} 15053.514
+kepler_container_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="dynamic",pod_name="kindnet-5jshm"} 174.393
+kepler_container_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="idle",pod_name="kindnet-5jshm"} 15053.514
+kepler_container_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="dynamic",pod_name="kube-controller-manager-minikube"} 397.377
+kepler_container_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="idle",pod_name="kube-controller-manager-minikube"} 15053.514
+kepler_container_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 48170.498999999996
+kepler_container_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 15053.514
+# HELP kepler_container_other_joules_total Aggregated value in other host components (platform - package - dram) in joules
+# TYPE kepler_container_other_joules_total counter
+kepler_container_other_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="dynamic",pod_name="kube-scheduler-minikube"} 0.252
+kepler_container_other_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="idle",pod_name="kube-scheduler-minikube"} 0
+kepler_container_other_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="dynamic",pod_name="kube-apiserver-minikube"} 0.252
+kepler_container_other_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="idle",pod_name="kube-apiserver-minikube"} 0
+kepler_container_other_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="dynamic",pod_name="etcd-minikube"} 0.252
+kepler_container_other_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="idle",pod_name="etcd-minikube"} 0
+kepler_container_other_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="dynamic",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 0.039
+kepler_container_other_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="idle",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 0
+kepler_container_other_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="dynamic",pod_name="kepler-j768x"} 0.228
+kepler_container_other_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="idle",pod_name="kepler-j768x"} 0
+kepler_container_other_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="dynamic",pod_name="coredns-5dd5756b68-ph4r2"} 0.252
+kepler_container_other_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="idle",pod_name="coredns-5dd5756b68-ph4r2"} 0
+kepler_container_other_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0
+kepler_container_other_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 0
+kepler_container_other_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0
+kepler_container_other_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 0
+kepler_container_other_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="dynamic",pod_name="kube-proxy-t2h77"} 0.078
+kepler_container_other_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="idle",pod_name="kube-proxy-t2h77"} 0
+kepler_container_other_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="dynamic",pod_name="storage-provisioner"} 0.243
+kepler_container_other_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="idle",pod_name="storage-provisioner"} 0
+kepler_container_other_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="dynamic",pod_name="kindnet-5jshm"} 0.105
+kepler_container_other_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="idle",pod_name="kindnet-5jshm"} 0
+kepler_container_other_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="dynamic",pod_name="kube-controller-manager-minikube"} 0.252
+kepler_container_other_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="idle",pod_name="kube-controller-manager-minikube"} 0
+kepler_container_other_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.996
+kepler_container_other_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 0
+# HELP kepler_container_package_joules_total Aggregated RAPL value in package (socket) in joules
+# TYPE kepler_container_package_joules_total counter
+kepler_container_package_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="dynamic",pod_name="kube-scheduler-minikube"} 74.07
+kepler_container_package_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="idle",pod_name="kube-scheduler-minikube"} 14010.702
+kepler_container_package_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="dynamic",pod_name="kube-apiserver-minikube"} 1274.124
+kepler_container_package_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="idle",pod_name="kube-apiserver-minikube"} 14010.702
+kepler_container_package_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="dynamic",pod_name="etcd-minikube"} 253.992
+kepler_container_package_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="idle",pod_name="etcd-minikube"} 14010.702
+kepler_container_package_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="dynamic",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 19.134
+kepler_container_package_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="idle",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 14010.702
+kepler_container_package_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="dynamic",pod_name="kepler-j768x"} 68.619
+kepler_container_package_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="idle",pod_name="kepler-j768x"} 14010.702
+kepler_container_package_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="dynamic",pod_name="coredns-5dd5756b68-ph4r2"} 32.268
+kepler_container_package_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="idle",pod_name="coredns-5dd5756b68-ph4r2"} 14010.702
+kepler_container_package_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.057
+kepler_container_package_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 43.68
+kepler_container_package_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.03
+kepler_container_package_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 2.166
+kepler_container_package_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="dynamic",pod_name="kube-proxy-t2h77"} 10.635
+kepler_container_package_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="idle",pod_name="kube-proxy-t2h77"} 14010.702
+kepler_container_package_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="dynamic",pod_name="storage-provisioner"} 30.102
+kepler_container_package_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="idle",pod_name="storage-provisioner"} 14010.702
+kepler_container_package_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="dynamic",pod_name="kindnet-5jshm"} 11.622
+kepler_container_package_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="idle",pod_name="kindnet-5jshm"} 14010.702
+kepler_container_package_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="dynamic",pod_name="kube-controller-manager-minikube"} 216.42
+kepler_container_package_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="idle",pod_name="kube-controller-manager-minikube"} 14010.702
+kepler_container_package_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 46527.21
+kepler_container_package_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 14010.702
+# HELP kepler_container_uncore_joules_total Aggregated RAPL value in uncore in joules
+# TYPE kepler_container_uncore_joules_total counter
+kepler_container_uncore_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="dynamic",pod_name="kube-scheduler-minikube"} 94.422
+kepler_container_uncore_joules_total{container_id="04e67869e36e772834342fa08e360978d027b7625bffe56dcb0bb8edaae4951c",container_name="kube-scheduler",container_namespace="kube-system",mode="idle",pod_name="kube-scheduler-minikube"} 16.374
+kepler_container_uncore_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="dynamic",pod_name="kube-apiserver-minikube"} 94.422
+kepler_container_uncore_joules_total{container_id="144844ab1d894f58382ef0d4788d056f1032c1b6213dc01311f417374985c65c",container_name="kube-apiserver",container_namespace="kube-system",mode="idle",pod_name="kube-apiserver-minikube"} 16.374
+kepler_container_uncore_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="dynamic",pod_name="etcd-minikube"} 94.422
+kepler_container_uncore_joules_total{container_id="1b96a35be675807ef6baf75aec89d5d95037a6ec08f434f9caf16b74b8ab60e3",container_name="etcd",container_namespace="kube-system",mode="idle",pod_name="etcd-minikube"} 16.374
+kepler_container_uncore_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="dynamic",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 94.422
+kepler_container_uncore_joules_total{container_id="360c50d11776b5092e8aa3a314aa6cddf4996a64fba761d169e2c11c6d1bc293",container_name="node-exporter",container_namespace="monitoring",mode="idle",pod_name="prometheus-prometheus-node-exporter-lrzrx"} 16.374
+kepler_container_uncore_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="dynamic",pod_name="kepler-j768x"} 94.422
+kepler_container_uncore_joules_total{container_id="478e36bf739a5f82869bfe9367048c6e4412dee97587aa960c841de20b5776a1",container_name="kepler-exporter",container_namespace="monitoring",mode="idle",pod_name="kepler-j768x"} 16.374
+kepler_container_uncore_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="dynamic",pod_name="coredns-5dd5756b68-ph4r2"} 94.422
+kepler_container_uncore_joules_total{container_id="498fdbb8df258c26a195e9a0c02bf9f8657ae8b916dbdc4a2113884c3b4e3c37",container_name="coredns",container_namespace="kube-system",mode="idle",pod_name="coredns-5dd5756b68-ph4r2"} 16.374
+kepler_container_uncore_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.789
+kepler_container_uncore_joules_total{container_id="802fc4cb2e49b1c852c06b37ef96b3f4d2350329eeb906de98f84a763151b832",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 0
+kepler_container_uncore_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 0.015
+kepler_container_uncore_joules_total{container_id="ab4264b023d6b5e35d116a953a03ca3cc231e5435bcaf3e87f5576c485607fd7",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 0
+kepler_container_uncore_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="dynamic",pod_name="kube-proxy-t2h77"} 94.422
+kepler_container_uncore_joules_total{container_id="c7b6bbda5d3d9bdbfc46770445b333fd82bfafdafdfb784c449e239e42b986f5",container_name="kube-proxy",container_namespace="kube-system",mode="idle",pod_name="kube-proxy-t2h77"} 16.374
+kepler_container_uncore_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="dynamic",pod_name="storage-provisioner"} 94.422
+kepler_container_uncore_joules_total{container_id="e59a2198de958b922221887bcb3e3f006693cd3808141a8c07d0da2ff1f23375",container_name="storage-provisioner",container_namespace="kube-system",mode="idle",pod_name="storage-provisioner"} 16.374
+kepler_container_uncore_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="dynamic",pod_name="kindnet-5jshm"} 94.422
+kepler_container_uncore_joules_total{container_id="f6d03fdefaea3632780e26e5fdc6eb2ff889a42cdaf9d71e752300c95a583660",container_name="kindnet-cni",container_namespace="kube-system",mode="idle",pod_name="kindnet-5jshm"} 16.374
+kepler_container_uncore_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="dynamic",pod_name="kube-controller-manager-minikube"} 94.422
+kepler_container_uncore_joules_total{container_id="f7205c0a51b5c2064d76de6d5884bdcfe90663e23d536ffd3ddfa8850c950f30",container_name="kube-controller-manager",container_namespace="kube-system",mode="idle",pod_name="kube-controller-manager-minikube"} 16.374
+kepler_container_uncore_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="dynamic",pod_name="system_processes"} 94.422
+kepler_container_uncore_joules_total{container_id="system_processes",container_name="system_processes",container_namespace="system",mode="idle",pod_name="system_processes"} 16.374
+# HELP kepler_exporter_build_info A metric with a constant '1' value labeled by version, revision, branch, goversion from which kepler_exporter was built, and the goos and goarch for the build.
+# TYPE kepler_exporter_build_info gauge
+kepler_exporter_build_info{branch="",goarch="amd64",goos="linux",goversion="go1.20.10",revision="unknown",tags="include_gcs,include_oss,containers_image_openpgp,gssapi,providerless,netgo,osusergo,gpu,libbpf,linux",version=""} 1
+# HELP kepler_node_core_joules_total Aggregated RAPL value in core in joules
+# TYPE kepler_node_core_joules_total counter
+kepler_node_core_joules_total{instance="minikube",mode="dynamic",package="0",source="rapl"} 47519.091
+kepler_node_core_joules_total{instance="minikube",mode="idle",package="0",source="rapl"} 128804.214
+# HELP kepler_node_cpu_scaling_frequency_hertz Current average cpu frequency in hertz
+# TYPE kepler_node_cpu_scaling_frequency_hertz gauge
+kepler_node_cpu_scaling_frequency_hertz{cpu="0",instance="minikube"} 0
+kepler_node_cpu_scaling_frequency_hertz{cpu="1",instance="minikube"} 0
+kepler_node_cpu_scaling_frequency_hertz{cpu="2",instance="minikube"} 0
+kepler_node_cpu_scaling_frequency_hertz{cpu="3",instance="minikube"} 6.172e+06
+kepler_node_cpu_scaling_frequency_hertz{cpu="4",instance="minikube"} 0
+kepler_node_cpu_scaling_frequency_hertz{cpu="5",instance="minikube"} 0
+kepler_node_cpu_scaling_frequency_hertz{cpu="6",instance="minikube"} 0
+kepler_node_cpu_scaling_frequency_hertz{cpu="7",instance="minikube"} 0
+# HELP kepler_node_dram_joules_total Aggregated RAPL value in dram in joules
+# TYPE kepler_node_dram_joules_total counter
+kepler_node_dram_joules_total{instance="minikube",mode="dynamic",package="0",source="rapl"} 2281.551
+kepler_node_dram_joules_total{instance="minikube",mode="idle",package="0",source="rapl"} 11401.235
+# HELP kepler_node_info Labeled node information
+# TYPE kepler_node_info counter
+kepler_node_info{cpu_architecture="Coffee Lake"} 1
+# HELP kepler_node_other_joules_total Aggregated RAPL value in other components (platform - package - dram) in joules
+# TYPE kepler_node_other_joules_total counter
+kepler_node_other_joules_total{instance="minikube",mode="dynamic"} 0.845
+kepler_node_other_joules_total{instance="minikube",mode="idle"} 0.663
+# HELP kepler_node_package_joules_total Aggregated RAPL value in package (socket) in joules
+# TYPE kepler_node_package_joules_total counter
+kepler_node_package_joules_total{instance="minikube",mode="dynamic",package="0",source="rapl"} 48436.346
+kepler_node_package_joules_total{instance="minikube",mode="idle",package="0",source="rapl"} 154287.87
+# HELP kepler_node_platform_joules_total Aggregated RAPL value in platform (entire node) in joules
+# TYPE kepler_node_platform_joules_total counter
+kepler_node_platform_joules_total{instance="minikube",mode="dynamic",source="none"} 61.484
+kepler_node_platform_joules_total{instance="minikube",mode="idle",source="none"} 3632.577
+# HELP kepler_node_uncore_joules_total Aggregated RAPL value in uncore in joules
+# TYPE kepler_node_uncore_joules_total counter
+kepler_node_uncore_joules_total{instance="minikube",mode="dynamic",package="0",source="rapl"} 993.647
+kepler_node_uncore_joules_total{instance="minikube",mode="idle",package="0",source="rapl"} 193.281
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 1.38
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1.048576e+06
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 59
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 1.2189696e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.7102623455e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 2.0312064e+07
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes 1.8446744073709552e+19
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 1829
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0

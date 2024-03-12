@@ -1,2 +1,1 @@
-# EcoSchedulerKubernetes
-Projet long ENSEEIHT 3A
+1. Install Helm
